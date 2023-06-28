@@ -1,15 +1,35 @@
 body{
-    background-color: rgb(32, 53, 33)
-    
+    background-color: rgb(37, 69, 53)
 }
 
-header{
+.container{
+    display: grid;
+    grid-template-columns: 30% 33% 33%;
+    grid-template-rows: 15% 20% 20% 20% 20%;
+    grid-gap: 4%, 5%;
+}
+
+.Top-Header{
+    grid-column: 1 / end;
+    grid-row: 1 / 1;
+    border: 1px solid black;
 
     text-align: center;
     padding: 30px 0;
-
     color: aliceblue;
-    background-color: rgb(32, 53, 33);
+    background-color: rgb(37, 69, 53);
+}
+
+.About-Me{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    border: 1px solid black;
+}
+
+.About-Me-Text{
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    border: 1px solid black;
 }
 
 .glow {
@@ -19,6 +39,6 @@ header{
 }
 
 @keyframes glowing {
-    from { box-shadow: 0 0 100px 75px rgb(34, 76, 36); }
-    to { box-shadow: 0 0 100px 75px rgb(34, 76, 36); }
+    from { box-shadow: 0 0 100px 75px rgb(37, 69, 53); }
+    to { box-shadow: 0 0 100px 75px rgb(37, 69, 53); }
 }
