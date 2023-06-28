@@ -1,91 +1,89 @@
 body{
-    background-color: rgb(37, 69, 53)
+    background-color: rgb(11,69,10)
 }
 
 .container{
     display: grid;
-    grid-template-columns: 30vw 33vw 33vw;
-    grid-template-rows: 15vh 20vh 20vh 20vh 20vh;
-    grid-gap: 4%, 5%;
+    grid-template-columns: 33vw 33vw 13vw 20vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(247,255,215);
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(247,255,215);
+    align-content: center;
 }
 
 .Top-Header{
     grid-column: 1 / end;
     grid-row: 1 / 1;
-    border: 1px solid black;
-
     text-align: center;
-    color: aliceblue;
-    background-color: rgb(37, 69, 53);
 }
 
 .About-Me{
     grid-column: 1 / 1;
     grid-row: 2 / 2;
-    border: 1px solid black;
     text-align: center;
 }
 
 .About-Me-Text{
-    grid-column: 2 / 2;
+    grid-column: 2 / 4;
     grid-row: 2 / 2;
-    border: 1px solid black;
     text-align: center;
+    border: 1px solid black;
 }
 
 .Headshot{
-    grid-column: 3 / end;
+    grid-column: 4 / end;
     grid-row: 2 / 2;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Projects{
     grid-column: 1 / 1;
     grid-row: 3 / 3;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Project-Cards{
     grid-column: 2 / end;
     grid-row: 3 / 3;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Experience{
     grid-column: 1 / 1;
     grid-row: 4 / 4;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Timeline{
     grid-column: 2 / end;
     grid-row: 4 / 4;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Education{
     grid-column: 1 / 1;
     grid-row: 5 / 5;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Education-block-1{
     grid-column: 2 / 2;
     grid-row: 5 / 5;
-    border: 1px solid black;
     text-align: center;
 }
 
 .Education-block-2{
     grid-column: 3 / end;
     grid-row: 5 / 5;
-    border: 1px solid black;
     text-align: center;
 }
 
