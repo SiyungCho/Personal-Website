@@ -1,0 +1,10 @@
+.glow {
+    position: fixed;
+    mix-blend-mode: screen;
+    animation: glowing 1s infinite;
+}
+
+@keyframes glowing {
+    from { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
+    to { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
+}
