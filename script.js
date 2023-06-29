@@ -11,28 +11,28 @@ $(document).ready(function(){
     $("#Main-Section-Education").hide()
 });
 
-$('#About-Button').click(function(){
+$('#About-Button').hover(function(){
     $("#Main-Section-About").show()
     $("#Main-Section-Projects").hide()
     $("#Main-Section-Experience").hide()
     $("#Main-Section-Education").hide()
 });
 
-$('#Projects-Button').click(function(){
+$('#Projects-Button').hover(function(){
     $("#Main-Section-About").hide()
     $("#Main-Section-Projects").show()
     $("#Main-Section-Experience").hide()
     $("#Main-Section-Education").hide()
 });
 
-$('#Experience-Button').click(function(){
+$('#Experience-Button').hover(function(){
     $("#Main-Section-About").hide()
     $("#Main-Section-Projects").hide()
     $("#Main-Section-Experience").show()
     $("#Main-Section-Education").hide()
 });
 
-$('#Education-Button').click(function(){
+$('#Education-Button').hover(function(){
     $("#Main-Section-About").hide()
     $("#Main-Section-Projects").hide()
     $("#Main-Section-Experience").hide()
