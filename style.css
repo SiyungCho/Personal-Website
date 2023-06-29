@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(5, 11, 31)
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(193, 224, 225);
+    padding-top: 0.5rem;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: grey;
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-left: 300px;
+    padding-bottom: 10px;
+}
+
+.p2{
+    padding-top: 0px;
+}
+
+.p3{
+    padding-top: 0px
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 8vw 87vw;
+    grid-template-rows: 17% 1fr;
+    min-height: 96vh;
+    text-align: center;
+}
+
+.nav-bar{
+    grid-row: 2 / end;
+    grid-column: 1 / 1;
+
+    border: 1px solid black;
+}
+
+.Top-Header{
+    grid-row: 1 / 1;
+    grid-column: 1 / end;
+
+    border: 1px solid black;
+}
+
+.Main-Section{
+    grid-row: 2 / end;
+    grid-column: 2 / end;
+
+    color: white;
+
+    border: 1px solid black;
+}
+
+.nav-bar-elements{
+    display: flex;
+    flex-direction: column;
+    min-height: 1fr;
+    border: 1px solid black;
+}
+
+.glow {
+    position: fixed;
+    mix-blend-mode: screen;
+    animation: glowing 1s infinite;
+}
+
+@keyframes glowing {
+    from { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
+    to { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
+}
