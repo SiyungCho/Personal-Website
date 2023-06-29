@@ -31,39 +31,37 @@ p{
 .container{
     display: grid;
     grid-template-columns: 8vw 87vw;
-    grid-template-rows: 17% 1fr;
-    min-height: 96vh;
+    grid-template-rows: 17vh 79vh;
+    min-height: 100%;
     text-align: center;
 }
 
 .nav-bar{
     grid-row: 2 / end;
     grid-column: 1 / 1;
-
-    border: 1px solid black;
 }
 
 .Top-Header{
     grid-row: 1 / 1;
     grid-column: 1 / end;
-
-    border: 1px solid black;
 }
 
 .Main-Section{
     grid-row: 2 / end;
     grid-column: 2 / end;
-
     color: white;
-
-    border: 1px solid black;
 }
 
 .nav-bar-elements{
     display: flex;
     flex-direction: column;
-    min-height: 1fr;
-    border: 1px solid black;
+    height: 79vh;
+    justify-content: center;
+}
+
+.nav-bar-elements > div{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .glow {
@@ -75,4 +73,12 @@ p{
 @keyframes glowing {
     from { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
     to { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
+}
+
+.logo-image{
+    height: 30px;
+    width: 30px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 15px;
 }
