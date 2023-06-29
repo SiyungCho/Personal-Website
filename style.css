@@ -92,35 +92,29 @@ button {
 }
   
 button {
-    --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #37FF8B;
-    --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
+    -webkit-text-stroke: 1px rgb(193, 224, 225);
 }
 
 .hover-text {
     position: absolute;
     box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
+    color: #37FF8B;
     width: 0%;
     inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
+    border-right: 6px solid #37FF8B;
     overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
+    transition: 0.75s;
+    -webkit-text-stroke: 1px #37FF8B;
 }
   
-/* hover */
 button:hover .hover-text {
     width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color))
+    filter: drop-shadow(0 0 23px #37FF8B)
 }
