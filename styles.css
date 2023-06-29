@@ -5,7 +5,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 33vw 33vw 10vw 20vw;
-    grid-template-rows: 7% 450px auto auto auto;
+    grid-template-rows: 7% 400px auto auto auto;
     min-height: 300vh;
     text-align: center;
 }
@@ -33,7 +33,7 @@ b{
     width: 225px;
     padding-top: 75px;
     padding-bottom: 75px;
-    padding-right: 100px
+    padding-right: 75px
 }
 
 .Top-Header{
@@ -63,6 +63,7 @@ b{
 .Headshot{
     grid-column: 4 / end;
     grid-row: 2 / 2;
+    border: 1px solid black;
 }
 
 .Projects{
