@@ -24,6 +24,18 @@ h2{
     padding: 100px;
 }
 
+b{
+    color: rgb(155, 155, 155);
+}
+
+.headshot-photo{
+    height: 250px;
+    width: 225px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 100px
+}
+
 .Top-Header{
     grid-column: 1 / end;
     grid-row: 1 / 1;
@@ -46,10 +58,6 @@ h2{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
-}
-
-b{
-    color: rgb(155, 155, 155);
 }
 
 .Headshot{
