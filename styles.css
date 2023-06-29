@@ -1,24 +1,27 @@
 body{
-    background-color: rgb(11,69,10)
+    background-color: rgb(7,26,3)
 }
 
 .container{
     display: grid;
-    grid-template-columns: 33vw 33vw 13vw 20vw;
-    grid-template-rows: auto auto auto auto auto;
-    min-height: 100vh;
+    grid-template-columns: 33vw 33vw 10vw 20vw;
+    grid-template-rows: 7% 450px auto auto auto;
+    min-height: 300vh;
     text-align: center;
 }
 
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(247,255,215);
+    font-size: 40px;
+    color: rgb(214,211,174);
+    padding-top: 1.5rem;
 }
 
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(247,255,215);
-    padding: 2rem;
+    font-size: 25px;
+    color: rgb(214,211,174);
+    padding: 100px;
 }
 
 .Top-Header{
@@ -34,6 +37,19 @@ h2{
 .About-Me-Text{
     grid-column: 2 / 4;
     grid-row: 2 / 2;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: grey;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+b{
+    color: rgb(155, 155, 155);
 }
 
 .Headshot{
@@ -77,12 +93,12 @@ h2{
 }
 
 .glow {
-    position: absolute;
+    position: fixed;
     mix-blend-mode: screen;
     animation: glowing 1s infinite;
 }
 
 @keyframes glowing {
-    from { box-shadow: 0 0 100px 75px rgb(37, 69, 53); }
-    to { box-shadow: 0 0 100px 75px rgb(37, 69, 53); }
+    from { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
+    to { box-shadow: 0 0 150px 100px rgb(37, 69, 53); }
 }
