@@ -31,11 +31,50 @@
     flex-direction: column;
     width: 245px;
     padding: 1rem;
+
+    hr{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #88888855;
+        margin-top: 0;
+    }
 }
 
 .project-image{
     border-radius: .5rem;
     max-width: 100%;
-    height: 250px;
     object-fit: cover;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.card-description{
+    font-size: 14px;
+    margin: .5rem 0;
+    color: #a89ec9;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info .card-date{
+    width : 90px;
+    display: flex;
+    align-items: center;
+    color: #a89ec9;
+    margin-right: .2rem;
+
+    .card-date-description{
+        font-size: 14px;
+        padding-left: 4px;
+        ins{
+            margin: .5rem;
+            margin-bottom: .4rem;
+        }
+    }
 }

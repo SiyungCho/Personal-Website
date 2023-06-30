@@ -43,6 +43,7 @@ li img{
     border-radius: 5% / 3%;
     border: 1px solid var(--main-background);
     position: relative;
+    height: 175px;
 }
 
 .item{
