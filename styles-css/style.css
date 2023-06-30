@@ -33,7 +33,6 @@ p{
     grid-template-columns: 12vw 83vw;
     grid-template-rows: 17vh 79vh;
     min-height: 100%;
-    text-align: center;
 }
 
 .nav-bar{
@@ -44,6 +43,7 @@ p{
 .Top-Header{
     grid-row: 1 / 1;
     grid-column: 1 / end;
+    text-align: center;
 }
 
 .Main-Section{
