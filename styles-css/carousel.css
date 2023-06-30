@@ -1,11 +1,13 @@
 #Main-Section-Projects{
     display: flex;
     flex-direction: row;
+    border: 1px solid pink;
 }
 
 .Main-carousel{
     width: 63%;
-    padding: 15vh 8vw 15vh 3vw;
+    padding: 15vh 8vw 5vh 3vw;
+    border: 1px solid yellow;
 }
 
 .Main-carousel h3{
@@ -15,14 +17,18 @@
     font-size: 30px;
     color: rgb(193, 224, 225);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid orange;
 }
 
 .carousel-slider{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding-bottom: 10px;
     width: auto;
+    height: 400px;
     position: relative;
+    border: 1px solid red;
 }
 
 ul{
@@ -34,7 +40,7 @@ ul{
   
 li{
     width: 100px;
-    height: 100px;
+    height: 300px;
 }
   
 li img{
@@ -54,14 +60,14 @@ li img{
     height: 200px;
     position: absolute;
     z-index: -1;
-    top: 70px;
+    top: 100px;
 }
   
 .medium-1, .medium-2 {
     height: 250px;
     position: absolute;
     z-index: 0;
-    top: 40px;
+    top: 70px;
 }
   
 .small-1{
@@ -75,17 +81,17 @@ li img{
 .spotlight {
     position: absolute;
     z-index: 1;
-    height: 300px;
-    left: 300px;
+    height: 400px;
+    left: 300px; 
     top: 10px;
 }
   
 .medium-2{
-    left: 430px;
+    left: 400px;
 }
   
 .small-2{
-    left: 550px;
+    left: 470px;
 }
 
 
@@ -98,7 +104,7 @@ li img{
   cursor: pointer;
   font-weight: 600;
   position: absolute;
-  top: 160px;
+  top: 190px;
 }
 
 .previous-button{
