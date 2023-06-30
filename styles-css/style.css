@@ -54,7 +54,6 @@ p{
     grid-row: 2 / end;
     grid-column: 2 / end;
     color: white;
-    border: 1px solid red;
 }
 
 .logo-image{

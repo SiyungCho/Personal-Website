@@ -1,0 +1,122 @@
+#Main-Section-Projects{
+    display: flex;
+    flex-direction: row;
+}
+
+.Main-carousel{
+    width: 63%;
+    padding: 15vh 8vw 15vh 3vw;
+}
+
+.Main-carousel h3{
+    padding-left: 125px;
+    text-transform: capitalize;
+    margin: auto;
+    font-size: 30px;
+    color: rgb(193, 224, 225);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.carousel-slider{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+  
+li{
+    width: 100px;
+    height: 100px;
+}
+  
+li img{
+    border-radius: 5% / 3%;
+    border: 1px solid var(--main-background);
+    position: relative;
+}
+
+.item{
+    flex: 1 0 20%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s ease-in-out;
+}
+  
+.small-1, .small-2 {
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 70px;
+}
+  
+.medium-1, .medium-2 {
+    height: 250px;
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+}
+  
+.small-1{
+    left: 120px;
+}
+  
+.medium-1{
+    left: 200px;
+}
+  
+.spotlight {
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    left: 300px;
+    top: 10px;
+}
+  
+.medium-2{
+    left: 430px;
+}
+  
+.small-2{
+    left: 550px;
+}
+
+
+.previous-button,
+.next-button{
+  height: fit-content;
+  background-color: inherit;
+  font-size: 30px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 600;
+  position: absolute;
+  top: 160px;
+}
+
+.previous-button{
+  left: 80px;
+}
+
+.next-button{
+  left: 755px;
+}
+
+.previous-button::before{
+  content: '<';
+  color: rgb(193, 224, 225);
+  margin-right: 15px;
+}
+
+.next-button::before{
+  content: '>';
+  color: rgb(193, 224, 225);
+  margin-left: 15px;
+}
