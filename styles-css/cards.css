@@ -35,7 +35,7 @@
         transition: .7s all;
       }
       &:hover{
-        transform: scale(1.025);
+        transform: scale(1.05);
         filter: brightness(1.1);
         ::before{
           filter: brightness(.5);
@@ -108,4 +108,13 @@ h2{
         height: 25px;
         width: 25px;
     }
+}
+
+.Card-creator{
+    display: flex;
+    align-items: center;
+    margin-top: .2rem;
+    margin-bottom: -.3rem;
+    color: #a89ec9;
+    text-decoration: none;
 }
