@@ -2,6 +2,10 @@ body{
     background-color: rgb(5, 11, 31)
 }
 
+b{
+    color: rgb(193, 224, 225);
+}
+
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
@@ -13,7 +17,7 @@ p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     text-align: left;
-    color: grey;
+    color: rgb(146, 167, 168);
     padding-top: 100px;
     padding-right: 400px;
     padding-left: 300px;
@@ -50,6 +54,7 @@ p{
     grid-row: 2 / end;
     grid-column: 2 / end;
     color: white;
+    border: 1px solid red;
 }
 
 .logo-image{
