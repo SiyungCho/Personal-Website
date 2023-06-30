@@ -1,13 +1,11 @@
 #Main-Section-Projects{
     display: flex;
     flex-direction: row;
-    border: 1px solid pink;
 }
 
 .Main-carousel{
     width: 63%;
     padding: 15vh 8vw 5vh 3vw;
-    border: 1px solid yellow;
 }
 
 .Main-carousel h3{
@@ -17,7 +15,6 @@
     font-size: 30px;
     color: rgb(193, 224, 225);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 1px solid orange;
 }
 
 .carousel-slider{
@@ -28,7 +25,6 @@
     width: auto;
     height: 400px;
     position: relative;
-    border: 1px solid red;
 }
 
 ul{
