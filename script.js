@@ -41,9 +41,11 @@ $('#Education-Button').hover(function(){
 
 document.addEventListener("click", (e) =>{
     if(e.target.classList.contains("previous-button")){
+        togglePrevious();
         updatePrev();
     }
     else if(e.target.classList.contains("next-button")){
+        toggleNext();
         updateNext();
     }
 })
@@ -120,4 +122,43 @@ function updatePrev() {
             item.classList.remove('small-1');
         } 
     });
+}
+
+function togglePrevious(){
+    const currentActive = document.querySelector("div.active");
+    const currentIndex = parseInt(currentActive.dataset.index);
+    //console.log(currentIndex);
+
+    if(currentIndex - 1 >= 0){
+        const previousChild = document.querySelector(`[data-index="${currentIndex-1}"]`);
+        //console.log(previousChild)
+        currentActive.classList.remove("active");
+        previousChild.classList.add("active");
+    }
+    else{
+        const previousChild = document.querySelector(`[data-index="${4}"]`);
+        //console.log(previousChild)
+        currentActive.classList.remove("active");
+        previousChild.classList.add("active");
+    }
+}
+
+
+function toggleNext(){
+    const currentActive = document.querySelector("div.active");
+    const currentIndex = parseInt(currentActive.dataset.index);
+    //console.log(currentIndex);
+
+    if(currentIndex + 1 <= 4){
+        const nextChild = document.querySelector(`[data-index="${currentIndex+1}"]`);
+        //console.log(nextChild)
+        currentActive.classList.remove("active");
+        nextChild.classList.add("active");
+    }
+    else{
+        const nextChild = document.querySelector(`[data-index="${0}"]`);
+        //console.log(nextChild)
+        currentActive.classList.remove("active");
+        nextChild.classList.add("active");
+    }
 }

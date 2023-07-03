@@ -4,7 +4,7 @@
 }
 
 .Main-carousel{
-    width: 63%;
+    width: 57%;
     padding: 8vh 8vw 5vh 7vw;
 }
 
@@ -122,4 +122,25 @@ li img{
   content: '>';
   color: rgb(193, 224, 225);
   margin-left: 15px;
+}
+
+.Project-descriptions{
+    width: 40%;
+    position: relative;
+}
+
+.Project-descriptions div{
+    display: none;
+}
+
+div.active{
+    color: rgb(193, 224, 225);
+    font-size: 20px;
+    display: block;
+}
+
+div.active .side-text{
+    color: rgb(193, 224, 225);
+    font-size: 16px;
+    display: block;
 }
