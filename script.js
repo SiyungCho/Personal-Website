@@ -9,42 +9,6 @@ $(document).ready(function(){
     $("#Main-Section-Projects").hide()
     $("#Main-Section-Experience").hide()
     $("#Main-Section-Education").hide()
-
-    var mySwiper = new Swiper(".swiper", {
-        autoHeight: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false
-        },
-        speed: 500,
-        direction: "horizontal",
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          type: "progressbar"
-        },
-        loop: false,
-        effect: "slide",
-        spaceBetween: 30,
-        on: {
-          init: function () {
-            $(".list-of-dates .date-item").removeClass("active");
-            $(".list-of-dates .date-item").eq(0).addClass("active");
-          },
-          slideChangeTransitionStart: function () {
-            $(".list-of-dates .date-item").removeClass("active");
-            $(".list-of-dates .date-item").eq(mySwiper.realIndex).addClass("active");
-          }
-        }
-      });
-      $(".list-of-dates .date-item").click(function () {
-        mySwiper.slideTo($(this).index());
-        $(".list-of-dates .date-item").removeClass("active");
-        $(this).addClass("active");
-      });
 });
 
 $('#About-Button').hover(function(){
