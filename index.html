@@ -12,8 +12,12 @@
         <link rel="stylesheet" href="styles-css\cursor-glow.css">
         <link rel="stylesheet" href="styles-css\cards.css">
         <link rel="stylesheet" href="styles-css\carousel.css">
+        <link rel="stylesheet" href="styles-css\timeline.css">
+        <link rel="stylesheet" href="styles-css\timeline-list.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
     </head>
 
     <body>
@@ -92,7 +96,23 @@
                                 <li>
                                     <div  class="one-card medium-1 item" style="order: 1">
                                         <div class="main-card-body">
-                                            <img class="project-image" src="images\lung-xray.jfif">
+                                            <img class="project-image" src="images\project-images\nfl-logo.jfif">
+                                            <h2>NFL Combine Web Scraping</h2>
+                                            <h4 class="card-description">Data Analysis on NFL Combine data web scraped using python.</h4>
+                                            <div class="card-info">
+                                                <div class="card-icons">
+                                                    <a href="https://github.com/SiyungCho" target="_blank"><img src="images\github-logo.png" alt="github logo" class="card-image-icon"></a>
+                                                    <a href="https://github.com/SiyungCho" target="_blank"><img src="images\kaggle-logo.png" alt="kaggle logo" class="card-image-icon"></a>
+                                                </div>
+                                                <div class="card-date">
+                                                    <ins>◷</ins>
+                                                    <h4 class="card-date-description">June 2023</h4>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div class="Card-creator">
+                                                Creator: Frank Siyung Cho
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -100,7 +120,7 @@
                                 <li>
                                     <div  class="one-card spotlight item" style="order: 2">
                                         <div class="main-card-body">
-                                            <img class="project-image" src="images\lung-xray.jfif">
+                                            <img class="project-image" src="images\project-images\lung-xray.jfif">
                                             <h2>Lung Cancer Detection</h2>
                                             <h4 class="card-description">Lung Cancer detection program from X-ray scans using Deep Learning.</h4>
                                             <div class="card-info">
@@ -124,7 +144,23 @@
                                 <li>
                                     <div  class="one-card medium-2 item" style="order: 3">
                                         <div class="main-card-body">
-                                            <img class="project-image" src="images\lung-xray.jfif">
+                                            <img class="project-image" src="images\project-images\karaoke-bar.jfif">
+                                            <h2>Website for VIP Karaoke Bar</h2>
+                                            <h4 class="card-description">Created Website for VIP Karaoke Bar in Ottawa, Ontario.</h4>
+                                            <div class="card-info">
+                                                <div class="card-icons">
+                                                    <a href="https://github.com/SiyungCho" target="_blank"><img src="images\github-logo.png" alt="github logo" class="card-image-icon"></a>
+                                                    <a href="https://github.com/SiyungCho" target="_blank"><img src="images\kaggle-logo.png" alt="kaggle logo" class="card-image-icon"></a>
+                                                </div>
+                                                <div class="card-date">
+                                                    <ins>◷</ins>
+                                                    <h4 class="card-date-description">July 2023</h4>
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            <div class="Card-creator">
+                                                Creator: Frank Siyung Cho
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -159,7 +195,7 @@
 
                     </div>
 
-                    <div class="active" id="ind-project" data-index="2">
+                    <div class="activate" id="ind-project" data-index="2">
                         Lung Cancer Detection
                         <div class="side-text">
                             hello this is some text for project 3
@@ -186,7 +222,66 @@
             </div>
 
             <div class="Main-Section" id="Main-Section-Experience">
-                Experience
+                <div class="dates-timeline">
+                    <ul class="list-of-dates">
+                        <li class="date-item active first">
+                            <span class="date-title">date #1</span>
+                        </li>
+
+                        <li class="date-item">
+                            <span class="date-title">date #1</span>
+                        </li>
+
+                        <li class="date-item">
+                            <span class="date-title">date #1</span>
+                        </li>
+
+                        <li class="date-item">
+                            <span class="date-title">date #1</span>
+                        </li>
+
+                        <li class="date-item last">
+                            <span class="date-title">date #1</span>
+                        </li>
+                    </ul>
+
+
+                    <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="swiper-title">
+                                    title #1
+                                </span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <span class="swiper-title">
+                                    title #2
+                                </span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <span class="swiper-title">
+                                    title #3
+                                </span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <span class="swiper-title">
+                                    title #4
+                                </span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <span class="swiper-title">
+                                    title #5
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="Main-Section" id="Main-Section-Education">

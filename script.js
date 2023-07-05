@@ -9,6 +9,42 @@ $(document).ready(function(){
     $("#Main-Section-Projects").hide()
     $("#Main-Section-Experience").hide()
     $("#Main-Section-Education").hide()
+
+    var mySwiper = new Swiper(".swiper", {
+        autoHeight: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        speed: 500,
+        direction: "horizontal",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar"
+        },
+        loop: false,
+        effect: "slide",
+        spaceBetween: 30,
+        on: {
+          init: function () {
+            $(".list-of-dates .date-item").removeClass("active");
+            $(".list-of-dates .date-item").eq(0).addClass("active");
+          },
+          slideChangeTransitionStart: function () {
+            $(".list-of-dates .date-item").removeClass("active");
+            $(".list-of-dates .date-item").eq(mySwiper.realIndex).addClass("active");
+          }
+        }
+      });
+      $(".list-of-dates .date-item").click(function () {
+        mySwiper.slideTo($(this).index());
+        $(".list-of-dates .date-item").removeClass("active");
+        $(this).addClass("active");
+      });
 });
 
 $('#About-Button').hover(function(){
@@ -125,40 +161,40 @@ function updatePrev() {
 }
 
 function togglePrevious(){
-    const currentActive = document.querySelector("div.active");
+    const currentActive = document.querySelector("div.activate");
     const currentIndex = parseInt(currentActive.dataset.index);
     //console.log(currentIndex);
 
     if(currentIndex - 1 >= 0){
         const previousChild = document.querySelector(`[data-index="${currentIndex-1}"]`);
         //console.log(previousChild)
-        currentActive.classList.remove("active");
-        previousChild.classList.add("active");
+        currentActive.classList.remove("activate");
+        previousChild.classList.add("activate");
     }
     else{
         const previousChild = document.querySelector(`[data-index="${4}"]`);
         //console.log(previousChild)
-        currentActive.classList.remove("active");
-        previousChild.classList.add("active");
+        currentActive.classList.remove("activate");
+        previousChild.classList.add("activate");
     }
 }
 
 
 function toggleNext(){
-    const currentActive = document.querySelector("div.active");
+    const currentActive = document.querySelector("div.activate");
     const currentIndex = parseInt(currentActive.dataset.index);
     //console.log(currentIndex);
 
     if(currentIndex + 1 <= 4){
         const nextChild = document.querySelector(`[data-index="${currentIndex+1}"]`);
         //console.log(nextChild)
-        currentActive.classList.remove("active");
-        nextChild.classList.add("active");
+        currentActive.classList.remove("activate");
+        nextChild.classList.add("activate");
     }
     else{
         const nextChild = document.querySelector(`[data-index="${0}"]`);
         //console.log(nextChild)
-        currentActive.classList.remove("active");
-        nextChild.classList.add("active");
+        currentActive.classList.remove("activate");
+        nextChild.classList.add("activate");
     }
 }

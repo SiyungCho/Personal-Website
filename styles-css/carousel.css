@@ -133,13 +133,13 @@ li img{
     display: none;
 }
 
-div.active{
+div.activate{
     color: rgb(193, 224, 225);
     font-size: 20px;
     display: block;
 }
 
-div.active .side-text{
+div.activate .side-text{
     color: rgb(193, 224, 225);
     font-size: 16px;
     display: block;
