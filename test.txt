@@ -56,23 +56,6 @@ $active: #2C3E50
 $inactive: #AEB6BF
 
 
-html, body
-	height: 100%
-body
-	font-family: 'Quicksand', sans-serif
-	font-weight: 500
-	color: #424949
-	background-color: #ECF0F1
-	padding: 0 25px
-	display: flex
-	flex-direction: column
-	position: relative
-h1
-	text-align: center
-	height: 38px
-	margin: 60px 0
-	span
-		white-space: nowrap
 .flex-parent
 	display: flex
 	flex-direction: column
@@ -113,7 +96,9 @@ h1
 		left: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2})
 	&::after
 		right: calc(#{-$parentWidth / $numDots} + #{$dotWidth / 2})
-	&.active
+	
+    
+    &.active
 		background-color: $active
 		&::before
 			background-color: $active
@@ -152,7 +137,7 @@ h1
 			transform: translateX(-5px) rotateZ(-45deg)
 			font-size: 12px
 			text-indent: -10px
-            
+
 .description-flex-container
 	width: $parentWidth
 	font-weight: 400

@@ -4,6 +4,19 @@ document.addEventListener("mousemove", function(event) {
     glow.style.top = event.clientY + "px";
 });
 
+$(function(){
+	var inputs = $('.timestamp');
+	var paras = $('.timestamp-description').find('p');
+	inputs.click(function(){
+		var t = $(this),
+				ind = t.index(),
+				matchedPara = paras.eq(ind);
+		
+		t.add(matchedPara).addClass('active');
+		inputs.not(t).add(paras.not(matchedPara)).removeClass('active');
+	});
+});
+
 $(document).ready(function(){
     $("#Main-Section-About").show()
     $("#Main-Section-Projects").hide()
