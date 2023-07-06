@@ -22,7 +22,7 @@
 .timestamp{
     width: 25px;
 	height: 25px;
-	background-color: rgb(78, 80, 89);
+	background-color: #2C3E50;
 	position: relative;
 	border-radius: 50%;
 }
@@ -39,7 +39,7 @@
 	z-index: -1;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: rgb(78, 80, 89);
+	background-color: #2C3E50;
 	width: calc(1000px /10);
 	height: 5px;
 	max-width: calc(1000px /10);
@@ -54,42 +54,44 @@
 }
 
 .timestamp.active{
-    background-color: rgb(78, 80, 89);
+    background-color: #2C3E50;
 
     .ind-time{
         font-weight: 700;
 		&::before{
-            font-size: 13px;
+            color: rgb(193, 224, 225);
+            font-size: 16px;
         }
 		&::after{
-            font-size: 15px;
+            color: rgb(193, 224, 225);
+            font-size: 16px;
         }
     }
 }
 
 .timestamp.active::before{
-    background-color: rgb(78, 80, 89);
+    background-color: #2C3E50;
 }
 
 .timestamp.active::after{
-    background-color: rgb(166, 172, 190);
+    background-color: #AEB6BF;
 }
 
 .timestamp.active ~ .timestamp{
     &, &::before, &::after{
-        background-color: rgb(166, 172, 190);
+        background-color: #AEB6BF;
     }
 }
 
 .timestamp{
     .ind-time {
+        color: rgb(145, 165, 165);
         width: 1px;
         height: 1px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 100%;
         visibility: hidden;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     
     .ind-time::before,
@@ -102,16 +104,14 @@
     .ind-time::after {
         content: attr(data-year);
         top: 25px;
-        transform: translateX(-50%);
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .ind-time::before {
         content: attr(data-info);
         top: -65px;
-        width: 70px;
-        transform: translateX(-5px) rotateZ(-45deg);
-        font-size: 12px;
+        width: 120px;
+        font-size: 14px;
         text-indent: -10px;
     }
     
@@ -119,16 +119,31 @@
 
 .timestamp-description{
     width: 1000px;
-	font-weight: 400;
-	font-size: 22px;
+    height: 250px;
+    background-color: #1f3051;
+    background: linear-gradient(0deg, #1f3051 0%, rgba(15, 0, 103, 0.5) 100%);
+    border-radius: 2%;
 	max-width: 1000px;
 }
 
-.timestamp-description p{
-    margin-top: 0;
+.timestamp-description .timestamp-text{
 	display: none;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	&.active{
         display: block;
     }
+}
+
+.timestamp-title{
+    color: rgb(193, 224, 225);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.timestamp-under-text{
+    padding-left: 10px;
+    margin-top: 10px;
+    color: rgb(193, 224, 225);
+    font-size: 16px;
 }

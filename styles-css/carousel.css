@@ -134,12 +134,25 @@ li img{
 }
 
 div.activate{
+    display: block;
+    background-color: #1f3051;
+    background: linear-gradient(0deg, #1f3051 0%, rgba(15, 0, 103, 0.5) 100%);
+    border-radius: 5%;
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.activate .ind-project-title{
     color: rgb(193, 224, 225);
     font-size: 20px;
     display: block;
+    text-align: center;
+    padding-top: 10px;
 }
 
 div.activate .side-text{
+    padding-left: 10px;
+    margin-top: 10px;
     color: rgb(193, 224, 225);
     font-size: 16px;
     display: block;

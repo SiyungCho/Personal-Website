@@ -6,7 +6,7 @@ document.addEventListener("mousemove", function(event) {
 
 $(function(){
 	var inputs = $('.timestamp');
-	var paras = $('.timestamp-description').find('p');
+	var paras = $('.timestamp-description').find('.timestamp-text');
 	inputs.click(function(){
 		var t = $(this),
 				ind = t.index(),
