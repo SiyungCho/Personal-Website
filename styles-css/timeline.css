@@ -22,7 +22,7 @@
 .timestamp{
     width: 25px;
 	height: 25px;
-	background-color: #2C3E50;
+	background-color: #3e7053;
 	position: relative;
 	border-radius: 50%;
 }
@@ -39,7 +39,7 @@
 	z-index: -1;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: #2C3E50;
+	background-color: #3e7053;
 	width: calc(1000px /10);
 	height: 5px;
 	max-width: calc(1000px /10);
@@ -54,7 +54,7 @@
 }
 
 .timestamp.active{
-    background-color: #2C3E50;
+    background-color: rgb(55, 255, 139);
 
     .ind-time{
         font-weight: 700;
@@ -70,7 +70,7 @@
 }
 
 .timestamp.active::before{
-    background-color: #2C3E50;
+    background: linear-gradient(45deg, #3e7053 10%, rgba(55, 255, 139, 0.688) 100%);;
 }
 
 .timestamp.active::after{
