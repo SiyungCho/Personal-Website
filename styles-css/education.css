@@ -23,7 +23,6 @@
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     align-items: center;
-    border: 1px solid red;
 }
 
 .education-space::-webkit-scrollbar {
@@ -41,7 +40,6 @@
     overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
-    border: 1px solid red;
 }
 
 .cert-space::-webkit-scrollbar {
@@ -50,7 +48,6 @@
 
 .cert-content .cert-section{
     height: auto;
-    border: 1px solid red;
 }
 
 .cert-title{
