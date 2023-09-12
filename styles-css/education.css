@@ -36,7 +36,7 @@
 
 .cert-space{
     display: grid;
-    grid-auto-rows: 955px;
+    grid-auto-rows: 555px;
     overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
