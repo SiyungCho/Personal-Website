@@ -40,7 +40,6 @@
     overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
-    border: 1px solid red;
     width: 42vw;
 }
 
@@ -50,6 +49,8 @@
 
 .cert-content .cert-section{
     height: auto;
+    margin-bottom: 10px;
+    border: 1px solid red;
 }
 
 .cert-title{
@@ -59,6 +60,8 @@
     width: 42vw;
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 5px;
+    border: 1px solid none;
 }
 
 .cert-card-space{
