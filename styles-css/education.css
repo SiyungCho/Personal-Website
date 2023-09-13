@@ -68,7 +68,7 @@
 .track-container{
     margin-top: 10px;
     transform: rotateX(180deg);
-    height: 45vh;
+    height: 25vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -144,9 +144,9 @@
     display: flex;
     flex-direction: column;
     width: 150px;
-    height: 100px;
+    height: 250px;
     padding: 1rem;
-    border: 1px solid yellow;
+    border: 1px solid none;
 }
 
 .edu-list{
