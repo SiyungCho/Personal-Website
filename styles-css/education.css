@@ -40,6 +40,8 @@
     overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
+    border: 1px solid red;
+    width: auto;
 }
 
 .cert-space::-webkit-scrollbar {
@@ -71,10 +73,6 @@
     overflow-y: hidden;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
-}
-
-.cert-card-space::-webkit-scrollbar {
-    display: none;
 }
 
 .one-card-edu{
