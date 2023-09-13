@@ -1,18 +1,19 @@
 .education-layout{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    height: 79vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .education-school{
     grid-row: 1 / 1;
     grid-column: 1 / 1;
+    border: 1px solid red;
 }
 
 .education-certification{
     grid-row: 1 / 1;
     grid-column: 2 / 2;
+    border: 1px solid red;
 }
 
 .education-space{
@@ -40,7 +41,7 @@
     overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
-    width: 42vw;
+    border: 1px solid white;
 }
 
 .cert-space::-webkit-scrollbar {
@@ -50,7 +51,7 @@
 .cert-content .cert-section{
     height: auto;
     margin-bottom: 10px;
-    border: 1px solid red;
+    border: 1px solid none;
 }
 
 .cert-title{
@@ -64,6 +65,11 @@
     border: 1px solid none;
 }
 
+.track-container{
+    overflow-x: auto;
+    border: 1px solid none;
+}
+
 .cert-card-space{
     margin-top: 10px;
     height: 320px;
@@ -73,20 +79,35 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #eee;
-    overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
+    border: 1px solid none;
 }
 
+/* Track */
+.cert-card-space::-webkit-scrollbar-track {
+    background: aliceblue;
+    border-radius: 5px;
+}
+
+/* Handle */
+.cert-card-space::-webkit-scrollbar-thumb {
+    background: #37a2ff;
+    border-radius: 5px;
+}
 
 .cert-card-space::-webkit-scrollbar {
     padding-top: 2px;
     padding-bottom: 2px;
-    width: 42vw;
+    width: 44vw;
     height: 4px;
     background-color: aliceblue;
 }
+
+/*
+---------------------------------------------------------------------------------------------------
+*/
 
 .one-card-edu{
     margin-top: 10px;

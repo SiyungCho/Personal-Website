@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horizontal Scrollbar at the Top</title>
+        <style>
+            .outer-container {
+                width: 300px; /* Set the width of your container */
+                overflow-x: auto; /* Enable horizontal scrollbar */
+            }
+
+            .inner-container {
+                white-space: nowrap; /* Prevent text from wrapping */
+                transform: rotate(180deg); /* Rotate the inner container */
+                transform-origin: top left; /* Set the rotation origin to the top left corner */
+            }
+
+            /* Optional styling for demonstration purposes */
+            .outer-container {
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer-container">
+            <div class="inner-container">
+                <!-- Your content goes here -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Fusce euismod, purus nec tincidunt hendrerit, ex elit bibendum odio.
+                Donec eget venenatis eros, ut luctus est.
+                <!-- Repeat your content as needed -->
+            </div>
+        </div>
+    </body>
+</html>
