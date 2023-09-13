@@ -70,7 +70,7 @@
 }
 
 .timestamp.active::before{
-    background: linear-gradient(45deg, #3e7053 10%, rgba(55, 255, 139, 0.688) 100%);;
+    background: linear-gradient(45deg, #3e7053 10%, rgba(55, 255, 139, 0.688) 100%);
 }
 
 .timestamp.active::after{
