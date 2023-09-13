@@ -7,13 +7,13 @@
 .education-school{
     grid-row: 1 / 1;
     grid-column: 1 / 1;
-    border: 1px solid red;
+    border: 1px solid none;
 }
 
 .education-certification{
     grid-row: 1 / 1;
     grid-column: 2 / 2;
-    border: 1px solid red;
+    border: 1px solid none;
 }
 
 .education-space{
@@ -41,7 +41,7 @@
     overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
-    border: 1px solid white;
+    border: 1px solid none;
 }
 
 .cert-space::-webkit-scrollbar {
