@@ -103,7 +103,7 @@
 .track-container::-webkit-scrollbar {
     height: 6px;
     border-radius: 25%;
-    background-color: aliceblue;
+    background-color: rgb(155, 174, 209);
 }
 
 /*
