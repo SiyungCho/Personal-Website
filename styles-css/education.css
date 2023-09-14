@@ -20,11 +20,11 @@
     display: grid;
     grid-gap: 5px;
     grid-auto-rows: 75vh;
-    overflow: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     align-items: center;
-    border: 1px solid none;
+    border: 1px solid green;
+    overflow-y: scroll;
 }
 
 .education-space::-webkit-scrollbar {
@@ -32,9 +32,14 @@
 }
 
 .degree-space{
-    height: 400px;
-    padding-top: 1px;
-    border: 1px solid none;
+    margin-top: 1vh;
+    height: 350px;
+    overflow-y: hidden;
+    border: 1px solid red;
+}
+
+.degree-space::-webkit-scrollbar {
+    display: none;
 }
 
 .cert-space{
@@ -172,13 +177,12 @@
     height: 100%;
     object-fit: cover;
     transition: all 0.6s ease-in-out;
-    border: 1px solid none;
+    border: 1px solid red;
 }
 
 .one-card-deg{
-    margin-top: 2vh;
-    margin-left: 10vw;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 8vw;
     padding-left: 10px;
     background-color: #515a6a;
     background: linear-gradient(0deg, rgb(78, 86, 101) 0%, rgba(55, 0, 103, 0.5) 100%);
