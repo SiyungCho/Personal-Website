@@ -24,14 +24,17 @@
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     align-items: center;
+    border: 1px solid none;
 }
 
 .education-space::-webkit-scrollbar {
     display: none;
 }
 
-.education-content div{
-    padding-top: 100px;
+.degree-space{
+    height: 400px;
+    padding-top: 1px;
+    border: 1px solid none;
 }
 
 .cert-space{
@@ -162,4 +165,66 @@
     object-fit: cover;
     transition: all 0.6s ease-in-out;
     border: 1px solid none;
+}
+
+.item-deg{
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s ease-in-out;
+    border: 1px solid none;
+}
+
+.one-card-deg{
+    margin-top: 1vh;
+    margin-left: 7vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #515a6a;
+    background: linear-gradient(0deg, rgb(78, 86, 101) 0%, rgba(55, 0, 103, 0.5) 100%);
+    box-shadow: 0 7px 20px 5px #24242488;
+    border-radius: .7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    transition: .5s all;
+    width: 600px;
+    height: 350px;
+    border: 1px solid none;
+
+    ::before{
+        position: fixed;
+        content: "";
+        top: -10%;
+        transform: rotate(-45deg);
+        height: 60rem;
+        transition: .7s all;
+      }
+      &:hover{
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        ::before{
+          filter: brightness(.5);
+          top: -100%;
+        }
+      }
+}
+
+.main-card-body-deg{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    padding: 1rem;
+    border: 1px solid none;
+}
+
+.project-image-deg{
+    border-radius: .5rem;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.deg-card-content{
+    flex-grow: 1;
 }
