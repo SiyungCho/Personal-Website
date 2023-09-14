@@ -124,6 +124,7 @@
     background: linear-gradient(0deg, #1f3051 0%, rgba(15, 0, 103, 0.5) 100%);
     border-radius: 2%;
 	max-width: 1000px;
+    border: 1px solid none;
 }
 
 .timestamp-description .timestamp-text{
@@ -146,4 +147,10 @@
     margin-top: 10px;
     color: rgb(193, 224, 225);
     font-size: 16px;
+    height: 205px;
+    border: 1px solid none;
+}
+
+.real-text-timestamp{
+    padding-top: 10px;
 }

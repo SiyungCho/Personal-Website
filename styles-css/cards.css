@@ -63,9 +63,16 @@ hr{
     margin-top: 0;
 }
 
+.project-image-list{
+    border-radius: .5rem;
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+}
+
 .project-image{
     border-radius: .5rem;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
