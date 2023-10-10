@@ -13,7 +13,7 @@ h1{
     padding-top: 0.5rem;
 }
 
-p{
+.p1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     text-align: left;
@@ -22,14 +22,7 @@ p{
     padding-right: 400px;
     padding-left: 300px;
     padding-bottom: 10px;
-}
-
-.p2{
-    padding-top: 0px;
-}
-
-.p3{
-    padding-top: 0px
+    padding-top: 5vh;
 }
 
 .container{

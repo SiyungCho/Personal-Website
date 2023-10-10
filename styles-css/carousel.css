@@ -4,8 +4,8 @@
 }
 
 .Main-carousel{
-    width: 57%;
-    padding: 8vh 8vw 5vh 7vw;
+    width: 45vw;
+    padding: 12vh 8vw 8vh 0;
 }
 
 .Main-carousel h3{
@@ -22,7 +22,7 @@
     flex-direction: row;
     gap: 10px;
     padding-bottom: 10px;
-    width: auto;
+    width: 150;
     height: 400px;
     position: relative;
 }
@@ -68,27 +68,27 @@ li img{
 }
   
 .small-1{
-    left: 120px;
+    left: 100px;
 }
   
 .medium-1{
-    left: 200px;
+    left: 180px;
 }
   
 .spotlight {
     position: absolute;
     z-index: 1;
     height: 400px;
-    left: 300px; 
+    left: 280px; 
     top: 10px;
 }
   
 .medium-2{
-    left: 400px;
+    left: 380px;
 }
   
 .small-2{
-    left: 470px;
+    left: 450px;
 }
 
 
@@ -105,11 +105,11 @@ li img{
 }
 
 .previous-button{
-  left: 80px;
+  left: 60px;
 }
 
 .next-button{
-  left: 755px;
+  left: 735px;
 }
 
 .previous-button::before{
@@ -138,8 +138,10 @@ div.activate{
     background-color: #1f3051;
     background: linear-gradient(0deg, #1f3051 0%, rgba(15, 0, 103, 0.5) 100%);
     border-radius: 5%;
-    height: 500px;
+    height: 60vh;
+    width: 510px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 3vh;
 }
 
 div.activate .ind-project-title{
@@ -147,13 +149,18 @@ div.activate .ind-project-title{
     font-size: 20px;
     display: block;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 div.activate .side-text{
+    margin: 5px;
     padding-left: 10px;
     margin-top: 10px;
-    color: rgb(193, 224, 225);
+    color: rgb(214, 237, 238);
     font-size: 16px;
     display: block;
+}
+
+div.activate .side-text p b{
+    color: rgb(129, 173, 175);
 }

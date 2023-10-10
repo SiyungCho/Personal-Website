@@ -214,20 +214,29 @@
 
 .main-card-body-deg{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 150px;
+    width: 130px;
     height: 250px;
     padding: 1rem;
-    border: 1px solid none;
 }
 
 .project-image-deg{
     border-radius: .5rem;
-    width: 100%;
+    height: 200px;
     object-fit: cover;
-    height: 250px;
 }
 
 .deg-card-content{
-    flex-grow: 1;
+    width: 295px;
+}
+
+.ind-deg-title{
+    color: rgb(193, 224, 225);
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    height: 50px;
 }
