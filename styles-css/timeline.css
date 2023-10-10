@@ -160,6 +160,6 @@
     display: block;
 }
 
-.real-text-timestamp p b{
-    color: rgb(129, 173, 175);
+.timestamp-under-text p b{
+    color: rgb(126, 161, 161);
 }
