@@ -139,7 +139,7 @@
     color: rgb(193, 224, 225);
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .timestamp-under-text{
@@ -152,5 +152,14 @@
 }
 
 .real-text-timestamp{
-    padding-top: 10px;
+    margin: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: rgb(214, 237, 238);
+    font-size: 16px;
+    display: block;
+}
+
+.real-text-timestamp p b{
+    color: rgb(129, 173, 175);
 }
