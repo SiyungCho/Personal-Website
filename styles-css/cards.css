@@ -98,6 +98,7 @@ h2{
     align-items: center;
     color: #a89ec9;
     margin-right: .2rem;
+    border:1px solid none;
 
     .card-date-description{
         font-size: 14px;
