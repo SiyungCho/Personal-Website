@@ -41,6 +41,8 @@ h1{
     grid-row: 1 / 1;
     grid-column: 1 / end;
     text-align: center;
+
+    border: 1px solid none;
 }
 
 .Main-Section{
@@ -49,10 +51,26 @@ h1{
     color: white;
 }
 
+/*
+---------------------------------------------------------------------------------------------------
+*/
+
 .logo-image{
     height: 30px;
     width: 30px;
     padding-left: 3px;
     padding-right: 3px;
     padding-top: 15px;
+}
+
+.header-links{
+    margin-left: 45vw;
+    border: 1px solid none;
+    width: 150px;
+    margin-top: 1vh;
+
+    background-color: rgb(5, 11, 31);
+    background: linear-gradient(0deg, rgb(53, 71, 104) 0%, rgb(11, 23, 63) 100%);
+    box-shadow: 0 7px 20px 5px #24242488;
+    border-radius: .7rem;
 }
